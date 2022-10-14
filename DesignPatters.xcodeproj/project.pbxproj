@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76190E2128F977EA0000A050 /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76190E2028F977E90000A050 /* CardPayment.swift */; };
+		76190E2328F978480000A050 /* TypePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76190E2228F978480000A050 /* TypePayment.swift */; };
+		76190E2528F9788A0000A050 /* PaymentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76190E2428F9788A0000A050 /* PaymentFactory.swift */; };
 		768824F928F976530085EF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824F828F976530085EF18 /* AppDelegate.swift */; };
 		768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FA28F976530085EF18 /* SceneDelegate.swift */; };
 		768824FD28F976530085EF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FC28F976530085EF18 /* ViewController.swift */; };
 		7688250028F976530085EF18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768824FE28F976530085EF18 /* Main.storyboard */; };
 		7688250228F976570085EF18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7688250128F976570085EF18 /* Assets.xcassets */; };
 		7688250528F976570085EF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7688250328F976570085EF18 /* LaunchScreen.storyboard */; };
+		7688250F28F977490085EF18 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688250E28F977490085EF18 /* Payment.swift */; };
+		7688251128F9776D0085EF18 /* GooglePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688251028F9776D0085EF18 /* GooglePayment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76190E2028F977E90000A050 /* CardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
+		76190E2228F978480000A050 /* TypePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePayment.swift; sourceTree = "<group>"; };
+		76190E2428F9788A0000A050 /* PaymentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFactory.swift; sourceTree = "<group>"; };
 		768824F528F976530085EF18 /* DesignPatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768824F828F976530085EF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768824FA28F976530085EF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,8 @@
 		7688250128F976570085EF18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7688250428F976570085EF18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7688250628F976570085EF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7688250E28F977490085EF18 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
+		7688251028F9776D0085EF18 /* GooglePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePayment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		768824F728F976530085EF18 /* DesignPatters */ = {
 			isa = PBXGroup;
 			children = (
+				7688250C28F976730085EF18 /* creational */,
 				768824F828F976530085EF18 /* AppDelegate.swift */,
 				768824FA28F976530085EF18 /* SceneDelegate.swift */,
 				768824FC28F976530085EF18 /* ViewController.swift */,
@@ -65,6 +76,26 @@
 				7688250628F976570085EF18 /* Info.plist */,
 			);
 			path = DesignPatters;
+			sourceTree = "<group>";
+		};
+		7688250C28F976730085EF18 /* creational */ = {
+			isa = PBXGroup;
+			children = (
+				7688250D28F9767F0085EF18 /* FactoryMethod */,
+			);
+			path = creational;
+			sourceTree = "<group>";
+		};
+		7688250D28F9767F0085EF18 /* FactoryMethod */ = {
+			isa = PBXGroup;
+			children = (
+				7688250E28F977490085EF18 /* Payment.swift */,
+				7688251028F9776D0085EF18 /* GooglePayment.swift */,
+				76190E2028F977E90000A050 /* CardPayment.swift */,
+				76190E2228F978480000A050 /* TypePayment.swift */,
+				76190E2428F9788A0000A050 /* PaymentFactory.swift */,
+			);
+			path = FactoryMethod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +171,11 @@
 			files = (
 				768824FD28F976530085EF18 /* ViewController.swift in Sources */,
 				768824F928F976530085EF18 /* AppDelegate.swift in Sources */,
+				76190E2328F978480000A050 /* TypePayment.swift in Sources */,
+				76190E2128F977EA0000A050 /* CardPayment.swift in Sources */,
+				7688251128F9776D0085EF18 /* GooglePayment.swift in Sources */,
+				76190E2528F9788A0000A050 /* PaymentFactory.swift in Sources */,
+				7688250F28F977490085EF18 /* Payment.swift in Sources */,
 				768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

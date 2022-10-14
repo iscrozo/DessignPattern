@@ -1,0 +1,10 @@
+# eliminar archivos con _
+
+DesignPatters/._AppDelegate.swift
+
+**/._*.swift
+**/._*.xcworkspace
+
+
+# macOS Files
+.DS_Store

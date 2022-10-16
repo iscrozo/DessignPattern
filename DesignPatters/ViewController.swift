@@ -13,7 +13,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        testFactoryMethod()
+//         1- factoryMethod pattern
+//        testFactoryMethod()
+        
+//        2- Abstract factory pattern
+        testAbstractFactory()
     }
 
     
@@ -21,6 +25,14 @@ class ViewController: UIViewController {
         var payment: Payment
         payment = PaymentFactory.buildPayment(type: .GOOGLE)
         payment.doPayment() 
+    }
+    
+    func testAbstractFactory() {
+//        1era factoria
+        PaymentMethodClient.codigoCliente(factory: MonthlyGoogleFactory())
+        print("\n")
+//        2da factoria
+        PaymentMethodClient.codigoCliente(factory: PaymentIntAdvancedCardFactory())
     }
 
 }

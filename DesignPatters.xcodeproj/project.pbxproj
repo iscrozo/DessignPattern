@@ -10,6 +10,16 @@
 		76190E2128F977EA0000A050 /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76190E2028F977E90000A050 /* CardPayment.swift */; };
 		76190E2328F978480000A050 /* TypePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76190E2228F978480000A050 /* TypePayment.swift */; };
 		76190E2528F9788A0000A050 /* PaymentFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76190E2428F9788A0000A050 /* PaymentFactory.swift */; };
+		7628B5EA28FCBFBA00E77721 /* PaymentAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5E928FCBFBA00E77721 /* PaymentAF.swift */; };
+		7628B5EC28FCBFFE00E77721 /* CardPaymentAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5EB28FCBFFE00E77721 /* CardPaymentAF.swift */; };
+		7628B5EE28FCC3DF00E77721 /* GooglePaymentAF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5ED28FCC3DF00E77721 /* GooglePaymentAF.swift */; };
+		7628B5F028FCC44400E77721 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5EF28FCC44400E77721 /* Method.swift */; };
+		7628B5F228FCC48100E77721 /* MonthlyMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5F128FCC48100E77721 /* MonthlyMethod.swift */; };
+		7628B5F428FCC4E900E77721 /* PaymentAdvancedMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5F328FCC4E900E77721 /* PaymentAdvancedMethod.swift */; };
+		7628B5F628FCC56B00E77721 /* AbstractFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5F528FCC56B00E77721 /* AbstractFactory.swift */; };
+		7628B5F828FCC5D000E77721 /* PaymentIntAdvancedCardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5F728FCC5D000E77721 /* PaymentIntAdvancedCardFactory.swift */; };
+		7628B5FA28FCC65500E77721 /* MonthlyGoogleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5F928FCC65500E77721 /* MonthlyGoogleFactory.swift */; };
+		7628B5FC28FCC6BA00E77721 /* PaymentMethodClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5FB28FCC6BA00E77721 /* PaymentMethodClient.swift */; };
 		768824F928F976530085EF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824F828F976530085EF18 /* AppDelegate.swift */; };
 		768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FA28F976530085EF18 /* SceneDelegate.swift */; };
 		768824FD28F976530085EF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FC28F976530085EF18 /* ViewController.swift */; };
@@ -24,6 +34,16 @@
 		76190E2028F977E90000A050 /* CardPayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
 		76190E2228F978480000A050 /* TypePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypePayment.swift; sourceTree = "<group>"; };
 		76190E2428F9788A0000A050 /* PaymentFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentFactory.swift; sourceTree = "<group>"; };
+		7628B5E928FCBFBA00E77721 /* PaymentAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAF.swift; sourceTree = "<group>"; };
+		7628B5EB28FCBFFE00E77721 /* CardPaymentAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPaymentAF.swift; sourceTree = "<group>"; };
+		7628B5ED28FCC3DF00E77721 /* GooglePaymentAF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePaymentAF.swift; sourceTree = "<group>"; };
+		7628B5EF28FCC44400E77721 /* Method.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		7628B5F128FCC48100E77721 /* MonthlyMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyMethod.swift; sourceTree = "<group>"; };
+		7628B5F328FCC4E900E77721 /* PaymentAdvancedMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAdvancedMethod.swift; sourceTree = "<group>"; };
+		7628B5F528FCC56B00E77721 /* AbstractFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactory.swift; sourceTree = "<group>"; };
+		7628B5F728FCC5D000E77721 /* PaymentIntAdvancedCardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentIntAdvancedCardFactory.swift; sourceTree = "<group>"; };
+		7628B5F928FCC65500E77721 /* MonthlyGoogleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyGoogleFactory.swift; sourceTree = "<group>"; };
+		7628B5FB28FCC6BA00E77721 /* PaymentMethodClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodClient.swift; sourceTree = "<group>"; };
 		768824F528F976530085EF18 /* DesignPatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768824F828F976530085EF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768824FA28F976530085EF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +67,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7628B5E828FCBFA400E77721 /* abstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				7628B5E928FCBFBA00E77721 /* PaymentAF.swift */,
+				7628B5EB28FCBFFE00E77721 /* CardPaymentAF.swift */,
+				7628B5ED28FCC3DF00E77721 /* GooglePaymentAF.swift */,
+				7628B5EF28FCC44400E77721 /* Method.swift */,
+				7628B5F128FCC48100E77721 /* MonthlyMethod.swift */,
+				7628B5F328FCC4E900E77721 /* PaymentAdvancedMethod.swift */,
+				7628B5F528FCC56B00E77721 /* AbstractFactory.swift */,
+				7628B5F728FCC5D000E77721 /* PaymentIntAdvancedCardFactory.swift */,
+				7628B5F928FCC65500E77721 /* MonthlyGoogleFactory.swift */,
+				7628B5FB28FCC6BA00E77721 /* PaymentMethodClient.swift */,
+			);
+			path = abstractFactory;
+			sourceTree = "<group>";
+		};
 		768824EC28F976530085EF18 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +118,7 @@
 		7688250C28F976730085EF18 /* creational */ = {
 			isa = PBXGroup;
 			children = (
+				7628B5E828FCBFA400E77721 /* abstractFactory */,
 				7688250D28F9767F0085EF18 /* FactoryMethod */,
 			);
 			path = creational;
@@ -169,13 +207,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7628B5FC28FCC6BA00E77721 /* PaymentMethodClient.swift in Sources */,
 				768824FD28F976530085EF18 /* ViewController.swift in Sources */,
+				7628B5EA28FCBFBA00E77721 /* PaymentAF.swift in Sources */,
 				768824F928F976530085EF18 /* AppDelegate.swift in Sources */,
 				76190E2328F978480000A050 /* TypePayment.swift in Sources */,
+				7628B5EE28FCC3DF00E77721 /* GooglePaymentAF.swift in Sources */,
 				76190E2128F977EA0000A050 /* CardPayment.swift in Sources */,
 				7688251128F9776D0085EF18 /* GooglePayment.swift in Sources */,
+				7628B5F828FCC5D000E77721 /* PaymentIntAdvancedCardFactory.swift in Sources */,
 				76190E2528F9788A0000A050 /* PaymentFactory.swift in Sources */,
+				7628B5F228FCC48100E77721 /* MonthlyMethod.swift in Sources */,
+				7628B5F028FCC44400E77721 /* Method.swift in Sources */,
+				7628B5EC28FCBFFE00E77721 /* CardPaymentAF.swift in Sources */,
+				7628B5F428FCC4E900E77721 /* PaymentAdvancedMethod.swift in Sources */,
+				7628B5F628FCC56B00E77721 /* AbstractFactory.swift in Sources */,
 				7688250F28F977490085EF18 /* Payment.swift in Sources */,
+				7628B5FA28FCC65500E77721 /* MonthlyGoogleFactory.swift in Sources */,
 				768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

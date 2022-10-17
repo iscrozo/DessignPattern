@@ -11,22 +11,39 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
-//         1- factoryMethod pattern
-//        testFactoryMethod()
+//        test of design creation patter
+//        testCreationPattern(typePattern: .singleton)
         
-//        2- Abstract factory pattern
-//        testAbstractFactory()
-        
-//        3- builder
-//        testBuilder()
-        
-//        4- Prototype
-//        testPrototype()
-        
-//        5- Singleton
-        testSingleton()
+//        test of behavior pattern
+        testBehaviorPatther(typePattern: .chainOfResponsability)
+    }
+    
+    func testCreationPattern ( typePattern: designCreationPattern){
+        switch typePattern {
+        //         1- factoryMethod pattern
+        case .factoryMethods:
+            testFactoryMethod()
+        //        2- Abstract factory pattern
+        case .abstractFactory:
+            testAbstractFactory()
+        //        3- builder
+        case .builder:
+            testBuilder()
+        //        4- Prototype
+        case .prototype:
+            testPrototype()
+        //        5- Singleton
+        case .singleton:
+            testSingleton()
+        }
+    }
+    
+    func testBehaviorPatther( typePattern: designBehaviorPattern) {
+        switch typePattern {
+        case .chainOfResponsability:
+            testChainOfResponsability()
+        }
     }
 
 }
@@ -82,4 +99,21 @@ extension ViewController {
         
         instance.doSomething()
     }
+}
+
+// MARK: comportamiento pattern
+extension ViewController {
+    func testChainOfResponsability() {
+        
+    }
+}
+
+// creationa pattern
+enum designCreationPattern: String {
+    case factoryMethods, abstractFactory, builder, prototype, singleton
+}
+
+// Comportamiento pattern
+enum designBehaviorPattern: String{
+    case chainOfResponsability
 }

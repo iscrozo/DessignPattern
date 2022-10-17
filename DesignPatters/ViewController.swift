@@ -20,7 +20,10 @@ class ViewController: UIViewController {
 //        testAbstractFactory()
         
 //        3- builder
-        testBuilder()
+//        testBuilder()
+        
+//        4- Prototype
+        testPrototype()
     }
 
     
@@ -46,6 +49,20 @@ class ViewController: UIViewController {
             .build()
         
         card.showCard()
+    }
+    
+    func testPrototype() {
+        let original = VisaCard(cardNumber: 1234, cardType: "Credit")
+        
+        guard let copy = original.copy() as? VisaCard else {
+            return
+        }
+        
+        print(original.cardName)
+        print(copy.cardName)
+        
+        print(original.cardNumber)
+        print(copy.cardNumber)
     }
 }
 

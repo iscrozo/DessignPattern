@@ -21,6 +21,8 @@
 		7628B5FA28FCC65500E77721 /* MonthlyGoogleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5F928FCC65500E77721 /* MonthlyGoogleFactory.swift */; };
 		7628B5FC28FCC6BA00E77721 /* PaymentMethodClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5FB28FCC6BA00E77721 /* PaymentMethodClient.swift */; };
 		7628B5FF28FCD25800E77721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5FE28FCD25800E77721 /* Card.swift */; };
+		7628B60228FCEF7200E77721 /* PrototypeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B60128FCEF7200E77721 /* PrototypeCard.swift */; };
+		7628B60428FCF03600E77721 /* VisaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B60328FCF03600E77721 /* VisaCard.swift */; };
 		768824F928F976530085EF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824F828F976530085EF18 /* AppDelegate.swift */; };
 		768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FA28F976530085EF18 /* SceneDelegate.swift */; };
 		768824FD28F976530085EF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FC28F976530085EF18 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		7628B5F928FCC65500E77721 /* MonthlyGoogleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthlyGoogleFactory.swift; sourceTree = "<group>"; };
 		7628B5FB28FCC6BA00E77721 /* PaymentMethodClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodClient.swift; sourceTree = "<group>"; };
 		7628B5FE28FCD25800E77721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		7628B60128FCEF7200E77721 /* PrototypeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeCard.swift; sourceTree = "<group>"; };
+		7628B60328FCF03600E77721 /* VisaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisaCard.swift; sourceTree = "<group>"; };
 		768824F528F976530085EF18 /* DesignPatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768824F828F976530085EF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768824FA28F976530085EF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +98,15 @@
 			path = builder;
 			sourceTree = "<group>";
 		};
+		7628B60028FCEF3000E77721 /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				7628B60128FCEF7200E77721 /* PrototypeCard.swift */,
+				7628B60328FCF03600E77721 /* VisaCard.swift */,
+			);
+			path = Prototype;
+			sourceTree = "<group>";
+		};
 		768824EC28F976530085EF18 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +141,7 @@
 		7688250C28F976730085EF18 /* creational */ = {
 			isa = PBXGroup;
 			children = (
+				7628B60028FCEF3000E77721 /* Prototype */,
 				7628B5FD28FCD1E500E77721 /* builder */,
 				7628B5E828FCBFA400E77721 /* abstractFactory */,
 				7688250D28F9767F0085EF18 /* FactoryMethod */,
@@ -220,10 +234,12 @@
 			files = (
 				7628B5FC28FCC6BA00E77721 /* PaymentMethodClient.swift in Sources */,
 				768824FD28F976530085EF18 /* ViewController.swift in Sources */,
+				7628B60428FCF03600E77721 /* VisaCard.swift in Sources */,
 				7628B5FF28FCD25800E77721 /* Card.swift in Sources */,
 				7628B5EA28FCBFBA00E77721 /* PaymentAF.swift in Sources */,
 				768824F928F976530085EF18 /* AppDelegate.swift in Sources */,
 				76190E2328F978480000A050 /* TypePayment.swift in Sources */,
+				7628B60228FCEF7200E77721 /* PrototypeCard.swift in Sources */,
 				7628B5EE28FCC3DF00E77721 /* GooglePaymentAF.swift in Sources */,
 				76190E2128F977EA0000A050 /* CardPayment.swift in Sources */,
 				7688251128F9776D0085EF18 /* GooglePayment.swift in Sources */,

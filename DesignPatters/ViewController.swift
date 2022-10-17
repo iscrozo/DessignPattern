@@ -17,7 +17,10 @@ class ViewController: UIViewController {
 //        testFactoryMethod()
         
 //        2- Abstract factory pattern
-        testAbstractFactory()
+//        testAbstractFactory()
+        
+//        3- builder
+        testBuilder()
     }
 
     
@@ -35,5 +38,14 @@ class ViewController: UIViewController {
         PaymentMethodClient.codigoCliente(factory: PaymentIntAdvancedCardFactory())
     }
 
+    func testBuilder() {
+        var card: Card = Card.CardBuilder()
+            .carType(cardType: "Visa")
+            .numberCard(number: "6452 3473 2823 1232")
+            .expiredCard(expired: 2030)
+            .build()
+        
+        card.showCard()
+    }
 }
 

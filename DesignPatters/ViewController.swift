@@ -26,11 +26,15 @@ class ViewController: UIViewController {
         testPrototype()
     }
 
+}
+
+// MARK: creational pattern
+extension ViewController {
     
     func testFactoryMethod() {
         var payment: Payment
         payment = PaymentFactory.buildPayment(type: .GOOGLE)
-        payment.doPayment() 
+        payment.doPayment()
     }
     
     func testAbstractFactory() {
@@ -65,4 +69,3 @@ class ViewController: UIViewController {
         print(copy.cardNumber)
     }
 }
-

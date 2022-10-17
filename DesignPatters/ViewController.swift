@@ -23,7 +23,10 @@ class ViewController: UIViewController {
 //        testBuilder()
         
 //        4- Prototype
-        testPrototype()
+//        testPrototype()
+        
+//        5- Singleton
+        testSingleton()
     }
 
 }
@@ -67,5 +70,16 @@ extension ViewController {
         
         print(original.cardNumber)
         print(copy.cardNumber)
+    }
+    
+    func testSingleton(){
+        let instance = CardSingleton.shared
+        let instance2 = CardSingleton.shared
+        
+        if ( instance === instance2 ){
+            print ("LA i1 y la i2 es la misma")
+        }
+        
+        instance.doSomething()
     }
 }

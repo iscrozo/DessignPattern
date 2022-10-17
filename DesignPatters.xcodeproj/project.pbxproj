@@ -23,6 +23,7 @@
 		7628B5FF28FCD25800E77721 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B5FE28FCD25800E77721 /* Card.swift */; };
 		7628B60228FCEF7200E77721 /* PrototypeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B60128FCEF7200E77721 /* PrototypeCard.swift */; };
 		7628B60428FCF03600E77721 /* VisaCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B60328FCF03600E77721 /* VisaCard.swift */; };
+		7628B60728FCF70B00E77721 /* CardSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7628B60628FCF70B00E77721 /* CardSingleton.swift */; };
 		768824F928F976530085EF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824F828F976530085EF18 /* AppDelegate.swift */; };
 		768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FA28F976530085EF18 /* SceneDelegate.swift */; };
 		768824FD28F976530085EF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FC28F976530085EF18 /* ViewController.swift */; };
@@ -50,6 +51,7 @@
 		7628B5FE28FCD25800E77721 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		7628B60128FCEF7200E77721 /* PrototypeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeCard.swift; sourceTree = "<group>"; };
 		7628B60328FCF03600E77721 /* VisaCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisaCard.swift; sourceTree = "<group>"; };
+		7628B60628FCF70B00E77721 /* CardSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSingleton.swift; sourceTree = "<group>"; };
 		768824F528F976530085EF18 /* DesignPatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768824F828F976530085EF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768824FA28F976530085EF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +109,14 @@
 			path = Prototype;
 			sourceTree = "<group>";
 		};
+		7628B60528FCF6C500E77721 /* SIngleton */ = {
+			isa = PBXGroup;
+			children = (
+				7628B60628FCF70B00E77721 /* CardSingleton.swift */,
+			);
+			path = SIngleton;
+			sourceTree = "<group>";
+		};
 		768824EC28F976530085EF18 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +151,7 @@
 		7688250C28F976730085EF18 /* creational */ = {
 			isa = PBXGroup;
 			children = (
+				7628B60528FCF6C500E77721 /* SIngleton */,
 				7628B60028FCEF3000E77721 /* Prototype */,
 				7628B5FD28FCD1E500E77721 /* builder */,
 				7628B5E828FCBFA400E77721 /* abstractFactory */,
@@ -253,6 +264,7 @@
 				7688250F28F977490085EF18 /* Payment.swift in Sources */,
 				7628B5FA28FCC65500E77721 /* MonthlyGoogleFactory.swift in Sources */,
 				768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */,
+				7628B60728FCF70B00E77721 /* CardSingleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

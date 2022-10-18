@@ -42,6 +42,9 @@
 		76F4B5BB28FE39AF008C01B2 /* CreditCardActivateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5BA28FE39AF008C01B2 /* CreditCardActivateCommand.swift */; };
 		76F4B5BD28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5BC28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift */; };
 		76F4B5BF28FE3A87008C01B2 /* CreditCardInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5BE28FE3A87008C01B2 /* CreditCardInvoker.swift */; };
+		76F4B5C228FE3DB1008C01B2 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5C128FE3DB1008C01B2 /* CreditCard.swift */; };
+		76F4B5C428FE3DEE008C01B2 /* CreditCardCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5C328FE3DEE008C01B2 /* CreditCardCollection.swift */; };
+		76F4B5C628FE3E7C008C01B2 /* CreditCardIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5C528FE3E7C008C01B2 /* CreditCardIterator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +85,9 @@
 		76F4B5BA28FE39AF008C01B2 /* CreditCardActivateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardActivateCommand.swift; sourceTree = "<group>"; };
 		76F4B5BC28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardDesactivateCommand.swift; sourceTree = "<group>"; };
 		76F4B5BE28FE3A87008C01B2 /* CreditCardInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInvoker.swift; sourceTree = "<group>"; };
+		76F4B5C128FE3DB1008C01B2 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
+		76F4B5C328FE3DEE008C01B2 /* CreditCardCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardCollection.swift; sourceTree = "<group>"; };
+		76F4B5C528FE3E7C008C01B2 /* CreditCardIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardIterator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,7 @@
 		76F4B5A928FE2CF7008C01B2 /* behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				76F4B5C028FE3D9F008C01B2 /* iterator */,
 				76F4B5B528FE3856008C01B2 /* command */,
 				76F4B5AA28FE2D30008C01B2 /* chainResponsability */,
 			);
@@ -224,6 +231,16 @@
 				76F4B5BE28FE3A87008C01B2 /* CreditCardInvoker.swift */,
 			);
 			path = command;
+			sourceTree = "<group>";
+		};
+		76F4B5C028FE3D9F008C01B2 /* iterator */ = {
+			isa = PBXGroup;
+			children = (
+				76F4B5C128FE3DB1008C01B2 /* CreditCard.swift */,
+				76F4B5C328FE3DEE008C01B2 /* CreditCardCollection.swift */,
+				76F4B5C528FE3E7C008C01B2 /* CreditCardIterator.swift */,
+			);
+			path = iterator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +322,7 @@
 				76F4B5BF28FE3A87008C01B2 /* CreditCardInvoker.swift in Sources */,
 				7628B5FF28FCD25800E77721 /* Card.swift in Sources */,
 				7628B5EA28FCBFBA00E77721 /* PaymentAF.swift in Sources */,
+				76F4B5C428FE3DEE008C01B2 /* CreditCardCollection.swift in Sources */,
 				768824F928F976530085EF18 /* AppDelegate.swift in Sources */,
 				76190E2328F978480000A050 /* TypePayment.swift in Sources */,
 				7628B60228FCEF7200E77721 /* PrototypeCard.swift in Sources */,
@@ -318,12 +336,14 @@
 				76190E2528F9788A0000A050 /* PaymentFactory.swift in Sources */,
 				7628B5F228FCC48100E77721 /* MonthlyMethod.swift in Sources */,
 				7628B5F028FCC44400E77721 /* Method.swift in Sources */,
+				76F4B5C628FE3E7C008C01B2 /* CreditCardIterator.swift in Sources */,
 				7628B5EC28FCBFFE00E77721 /* CardPaymentAF.swift in Sources */,
 				76F4B5B928FE38E4008C01B2 /* CreditCardReceive.swift in Sources */,
 				7628B5F428FCC4E900E77721 /* PaymentAdvancedMethod.swift in Sources */,
 				7628B5F628FCC56B00E77721 /* AbstractFactory.swift in Sources */,
 				7688250F28F977490085EF18 /* Payment.swift in Sources */,
 				76F4B5AC28FE2D6E008C01B2 /* ApprovedLoanHandler.swift in Sources */,
+				76F4B5C228FE3DB1008C01B2 /* CreditCard.swift in Sources */,
 				7628B5FA28FCC65500E77721 /* MonthlyGoogleFactory.swift in Sources */,
 				768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */,
 				7628B60728FCF70B00E77721 /* CardSingleton.swift in Sources */,

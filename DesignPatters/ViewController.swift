@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .command)
+        testBehaviorPatther(typePattern: .iterator)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -45,6 +45,8 @@ class ViewController: UIViewController {
             testChainOfResponsability()
         case .command:
             testCommand()
+        case .iterator:
+            testIterator()
         }
     }
 
@@ -123,6 +125,17 @@ extension ViewController {
         
         
     }
+    
+    func testIterator(){
+        let misTarjetas = CreditCardCollection()
+        misTarjetas.append(CreditCard(type: "Gold"))
+        misTarjetas.append(CreditCard(type: "Black"))
+        misTarjetas.append(CreditCard(type: "Platinium"))
+        
+        for card in misTarjetas {
+            print(card.type)
+        }
+    }
 }
 
 // creationa pattern
@@ -132,5 +145,5 @@ enum designCreationPattern: String {
 
 // Comportamiento pattern
 enum designBehaviorPattern: String{
-    case chainOfResponsability, command
+    case chainOfResponsability, command, iterator
 }

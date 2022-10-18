@@ -103,8 +103,10 @@ extension ViewController {
 
 // MARK: comportamiento pattern
 extension ViewController {
+    
     func testChainOfResponsability() {
-        
+        let bank = BankHandler()
+        bank.creditCardRequest(totalLoan: 3000)
     }
 }
 

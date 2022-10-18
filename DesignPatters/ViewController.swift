@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .iterator)
+        testBehaviorPatther(typePattern: .mediator)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -47,6 +47,8 @@ class ViewController: UIViewController {
             testCommand()
         case .iterator:
             testIterator()
+        case .mediator:
+            testMediator()
         }
     }
 
@@ -136,6 +138,20 @@ extension ViewController {
             print(card.type)
         }
     }
+
+    func testMediator() {
+        let mediator = ConcreteMediator()
+        
+        let user1 = ConcreteColleague1(m: mediator)
+        let user2 = ConcreteColleague2(m: mediator)
+        
+        mediator.setColleague1(colleague1: user1)
+        mediator.setColleague2(colleague2: user2)
+        
+        user1.send(message: "Hola, cómo estas?, soy el user 1")
+        user2.send(message: "Estoy bien")
+        
+    }
 }
 
 // creationa pattern
@@ -145,5 +161,5 @@ enum designCreationPattern: String {
 
 // Comportamiento pattern
 enum designBehaviorPattern: String{
-    case chainOfResponsability, command, iterator
+    case chainOfResponsability, command, iterator, mediator
 }

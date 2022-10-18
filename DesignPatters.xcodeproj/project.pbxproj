@@ -37,6 +37,11 @@
 		76F4B5B028FE2E80008C01B2 /* PlatiniumHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5AF28FE2E80008C01B2 /* PlatiniumHandler.swift */; };
 		76F4B5B228FE2ED3008C01B2 /* BlackHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5B128FE2ED3008C01B2 /* BlackHandler.swift */; };
 		76F4B5B428FE2F36008C01B2 /* BankHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5B328FE2F36008C01B2 /* BankHandler.swift */; };
+		76F4B5B728FE38C6008C01B2 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5B628FE38C6008C01B2 /* Command.swift */; };
+		76F4B5B928FE38E4008C01B2 /* CreditCardReceive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5B828FE38E4008C01B2 /* CreditCardReceive.swift */; };
+		76F4B5BB28FE39AF008C01B2 /* CreditCardActivateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5BA28FE39AF008C01B2 /* CreditCardActivateCommand.swift */; };
+		76F4B5BD28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5BC28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift */; };
+		76F4B5BF28FE3A87008C01B2 /* CreditCardInvoker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5BE28FE3A87008C01B2 /* CreditCardInvoker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +77,11 @@
 		76F4B5AF28FE2E80008C01B2 /* PlatiniumHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatiniumHandler.swift; sourceTree = "<group>"; };
 		76F4B5B128FE2ED3008C01B2 /* BlackHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackHandler.swift; sourceTree = "<group>"; };
 		76F4B5B328FE2F36008C01B2 /* BankHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankHandler.swift; sourceTree = "<group>"; };
+		76F4B5B628FE38C6008C01B2 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		76F4B5B828FE38E4008C01B2 /* CreditCardReceive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardReceive.swift; sourceTree = "<group>"; };
+		76F4B5BA28FE39AF008C01B2 /* CreditCardActivateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardActivateCommand.swift; sourceTree = "<group>"; };
+		76F4B5BC28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardDesactivateCommand.swift; sourceTree = "<group>"; };
+		76F4B5BE28FE3A87008C01B2 /* CreditCardInvoker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardInvoker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +196,7 @@
 		76F4B5A928FE2CF7008C01B2 /* behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				76F4B5B528FE3856008C01B2 /* command */,
 				76F4B5AA28FE2D30008C01B2 /* chainResponsability */,
 			);
 			path = behavioral;
@@ -201,6 +212,18 @@
 				76F4B5B328FE2F36008C01B2 /* BankHandler.swift */,
 			);
 			path = chainResponsability;
+			sourceTree = "<group>";
+		};
+		76F4B5B528FE3856008C01B2 /* command */ = {
+			isa = PBXGroup;
+			children = (
+				76F4B5B628FE38C6008C01B2 /* Command.swift */,
+				76F4B5B828FE38E4008C01B2 /* CreditCardReceive.swift */,
+				76F4B5BA28FE39AF008C01B2 /* CreditCardActivateCommand.swift */,
+				76F4B5BC28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift */,
+				76F4B5BE28FE3A87008C01B2 /* CreditCardInvoker.swift */,
+			);
+			path = command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,20 +302,24 @@
 				768824FD28F976530085EF18 /* ViewController.swift in Sources */,
 				7628B60428FCF03600E77721 /* VisaCard.swift in Sources */,
 				76F4B5B028FE2E80008C01B2 /* PlatiniumHandler.swift in Sources */,
+				76F4B5BF28FE3A87008C01B2 /* CreditCardInvoker.swift in Sources */,
 				7628B5FF28FCD25800E77721 /* Card.swift in Sources */,
 				7628B5EA28FCBFBA00E77721 /* PaymentAF.swift in Sources */,
 				768824F928F976530085EF18 /* AppDelegate.swift in Sources */,
 				76190E2328F978480000A050 /* TypePayment.swift in Sources */,
 				7628B60228FCEF7200E77721 /* PrototypeCard.swift in Sources */,
 				76F4B5AE28FE2DD1008C01B2 /* GoldHandler.swift in Sources */,
+				76F4B5B728FE38C6008C01B2 /* Command.swift in Sources */,
 				7628B5EE28FCC3DF00E77721 /* GooglePaymentAF.swift in Sources */,
 				76190E2128F977EA0000A050 /* CardPayment.swift in Sources */,
 				7688251128F9776D0085EF18 /* GooglePayment.swift in Sources */,
+				76F4B5BB28FE39AF008C01B2 /* CreditCardActivateCommand.swift in Sources */,
 				7628B5F828FCC5D000E77721 /* PaymentIntAdvancedCardFactory.swift in Sources */,
 				76190E2528F9788A0000A050 /* PaymentFactory.swift in Sources */,
 				7628B5F228FCC48100E77721 /* MonthlyMethod.swift in Sources */,
 				7628B5F028FCC44400E77721 /* Method.swift in Sources */,
 				7628B5EC28FCBFFE00E77721 /* CardPaymentAF.swift in Sources */,
+				76F4B5B928FE38E4008C01B2 /* CreditCardReceive.swift in Sources */,
 				7628B5F428FCC4E900E77721 /* PaymentAdvancedMethod.swift in Sources */,
 				7628B5F628FCC56B00E77721 /* AbstractFactory.swift in Sources */,
 				7688250F28F977490085EF18 /* Payment.swift in Sources */,
@@ -301,6 +328,7 @@
 				768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */,
 				7628B60728FCF70B00E77721 /* CardSingleton.swift in Sources */,
 				76F4B5B428FE2F36008C01B2 /* BankHandler.swift in Sources */,
+				76F4B5BD28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

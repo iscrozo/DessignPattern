@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .chainOfResponsability)
+        testBehaviorPatther(typePattern: .command)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -43,6 +43,8 @@ class ViewController: UIViewController {
         switch typePattern {
         case .chainOfResponsability:
             testChainOfResponsability()
+        case .command:
+            testCommand()
         }
     }
 
@@ -108,6 +110,19 @@ extension ViewController {
         let bank = BankHandler()
         bank.creditCardRequest(totalLoan: 3000)
     }
+    
+    func testCommand(){
+        let creditCard = CreditCardReceiver()
+        let invoker =  CreditCardInvoker()
+        invoker.setCommand(command: CreditCardActivateCommand(creditCardReceiver: creditCard))
+        
+        invoker.run()
+        
+        invoker.setCommand(command: CreditCardDesactivateCommand(creditCardReceiver: creditCard))
+        invoker.run()
+        
+        
+    }
 }
 
 // creationa pattern
@@ -117,5 +132,5 @@ enum designCreationPattern: String {
 
 // Comportamiento pattern
 enum designBehaviorPattern: String{
-    case chainOfResponsability
+    case chainOfResponsability, command
 }

@@ -33,6 +33,9 @@
 		763ACBF528FF871000B1D70D /* MessagePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBF428FF871000B1D70D /* MessagePublisher.swift */; };
 		763ACBF728FF9CE600B1D70D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBF628FF9CE600B1D70D /* Car.swift */; };
 		763ACBF928FF9F6A00B1D70D /* Pedestrian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBF828FF9F6A00B1D70D /* Pedestrian.swift */; };
+		764CE6672900B9F8004CC59C /* PaymentTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6662900B9F8004CC59C /* PaymentTemplate.swift */; };
+		764CE6692900BABE004CC59C /* Paypal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6682900BABE004CC59C /* Paypal.swift */; };
+		764CE66B2900BB69004CC59C /* Visa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE66A2900BB69004CC59C /* Visa.swift */; };
 		768824F928F976530085EF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824F828F976530085EF18 /* AppDelegate.swift */; };
 		768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FA28F976530085EF18 /* SceneDelegate.swift */; };
 		768824FD28F976530085EF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FC28F976530085EF18 /* ViewController.swift */; };
@@ -101,6 +104,9 @@
 		763ACBF428FF871000B1D70D /* MessagePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePublisher.swift; sourceTree = "<group>"; };
 		763ACBF628FF9CE600B1D70D /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		763ACBF828FF9F6A00B1D70D /* Pedestrian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedestrian.swift; sourceTree = "<group>"; };
+		764CE6662900B9F8004CC59C /* PaymentTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentTemplate.swift; sourceTree = "<group>"; };
+		764CE6682900BABE004CC59C /* Paypal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paypal.swift; sourceTree = "<group>"; };
+		764CE66A2900BB69004CC59C /* Visa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visa.swift; sourceTree = "<group>"; };
 		768824F528F976530085EF18 /* DesignPatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768824F828F976530085EF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768824FA28F976530085EF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +226,16 @@
 			path = observer;
 			sourceTree = "<group>";
 		};
+		764CE6652900B9ED004CC59C /* template */ = {
+			isa = PBXGroup;
+			children = (
+				764CE6662900B9F8004CC59C /* PaymentTemplate.swift */,
+				764CE6682900BABE004CC59C /* Paypal.swift */,
+				764CE66A2900BB69004CC59C /* Visa.swift */,
+			);
+			path = template;
+			sourceTree = "<group>";
+		};
 		768824EC28F976530085EF18 = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +329,7 @@
 		76F4B5A928FE2CF7008C01B2 /* behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				764CE6652900B9ED004CC59C /* template */,
 				76CFC9F429001C7F008AFF12 /* strategy */,
 				76CFC9EB2900189B008AFF12 /* interpreter */,
 				76CFC9E02900165C008AFF12 /* state */,
@@ -444,6 +461,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F4B5B228FE2ED3008C01B2 /* BlackHandler.swift in Sources */,
+				764CE66B2900BB69004CC59C /* Visa.swift in Sources */,
 				763ACBF128FF868F00B1D70D /* Observer.swift in Sources */,
 				76CFC9E4290016DC008AFF12 /* MobileAlertState.swift in Sources */,
 				763ACBE828FF80B700B1D70D /* ArticleMemento.swift in Sources */,
@@ -457,6 +475,7 @@
 				76CFC9EA2900177D008AFF12 /* Slient.swift in Sources */,
 				76F4B5B028FE2E80008C01B2 /* PlatiniumHandler.swift in Sources */,
 				763ACBF328FF86B800B1D70D /* Subject.swift in Sources */,
+				764CE6692900BABE004CC59C /* Paypal.swift in Sources */,
 				76F4B5BF28FE3A87008C01B2 /* CreditCardInvoker.swift in Sources */,
 				7628B5FF28FCD25800E77721 /* Card.swift in Sources */,
 				76F4B5CF28FE4828008C01B2 /* ConcreteColleague2.swift in Sources */,
@@ -483,6 +502,7 @@
 				76CFC9FD29001DED008AFF12 /* Context.swift in Sources */,
 				763ACBF528FF871000B1D70D /* MessagePublisher.swift in Sources */,
 				7628B5F028FCC44400E77721 /* Method.swift in Sources */,
+				764CE6672900B9F8004CC59C /* PaymentTemplate.swift in Sources */,
 				76CFC9F129001A50008AFF12 /* OrExpression.swift in Sources */,
 				76F4B5C628FE3E7C008C01B2 /* CreditCardIterator.swift in Sources */,
 				7628B5EC28FCBFFE00E77721 /* CardPaymentAF.swift in Sources */,

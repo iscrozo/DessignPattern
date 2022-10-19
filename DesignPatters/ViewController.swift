@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .strategy)
+        testBehaviorPatther(typePattern: .template)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -59,6 +59,8 @@ class ViewController: UIViewController {
             testInterpreter()
         case .strategy:
             testStrategy()
+        case .template:
+            testTemplate()
         }
     }
 
@@ -233,6 +235,14 @@ extension ViewController {
         let context1 = Context(strategyTextFormatter: LowerStratefyTextFormatter())
         context1.publishText(text: "ESTE TEXTO SERA CONVERTIDO EN MINUS")
     }
+    
+    func testTemplate(){
+        let paymentMethodVisa = Visa()
+        paymentMethodVisa.makePayment()
+        
+        let paymentMethodPaypal = Paypal()
+        paymentMethodPaypal.makePayment()
+    }
 }
 
 // creationa pattern
@@ -243,5 +253,5 @@ enum designCreationPattern: String {
 // Comportamiento pattern
 enum designBehaviorPattern: String{
     case chainOfResponsability, command, iterator, mediator, memento, observer, state,
-        interpreter, strategy
+        interpreter, strategy, template
 }

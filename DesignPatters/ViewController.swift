@@ -219,6 +219,7 @@ extension ViewController {
         
         let containsOneOrCero = OrExpression(expression1: cero, expression2: uno)
         print(containsOneOrCero.interpret(context: "cero"))
+        print(containsOneOrCero.interpret(context: "cero, 0"))
         
         print(containsOneOrCero.interpret(context: "0"))
     }

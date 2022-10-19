@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .mediator)
+        testBehaviorPatther(typePattern: .memento)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -49,6 +49,8 @@ class ViewController: UIViewController {
             testIterator()
         case .mediator:
             testMediator()
+        case .memento:
+            testMemento()
         }
     }
 
@@ -152,6 +154,26 @@ extension ViewController {
         user2.send(message: "Estoy bien")
         
     }
+    
+    func testMemento(){
+        let carataker = Carataker()
+        var article = ArticleOriginator(id: 1, title: "Memento", text: "Memento es una pelicula")
+        carataker.addMemento(memento: article.createMemento())
+        
+        article.text = "Memento es una pelicula de molam protagonizada por Guy Pearce"
+        print(article.text)
+        
+        carataker.addMemento(memento: article.createMemento())
+        
+        let memento1: ArticleMemento = carataker.getMemento(index: 0)
+        let memento2: ArticleMemento = carataker.getMemento(index: 1)
+        
+        article.restore(memento: memento1)
+        print(article.text)
+        
+        article.restore(memento: memento2)
+        print(article.text)
+    }
 }
 
 // creationa pattern
@@ -161,5 +183,5 @@ enum designCreationPattern: String {
 
 // Comportamiento pattern
 enum designBehaviorPattern: String{
-    case chainOfResponsability, command, iterator, mediator
+    case chainOfResponsability, command, iterator, mediator, memento
 }

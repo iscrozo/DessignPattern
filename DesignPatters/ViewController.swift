@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .observer)
+        testBehaviorPatther(typePattern: .state)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -53,6 +53,8 @@ class ViewController: UIViewController {
             testMemento()
         case .observer:
             testObserver()
+        case .state:
+            testState()
         }
     }
 
@@ -192,6 +194,22 @@ extension ViewController {
         trafficLight = TrafficLight(status: "CAR_RED")
         messagePublisher.notifyUpdate(trafficLight: trafficLight)
     }
+    
+    func testState() {
+        let context = MobileAlertStateContext()
+        context.alert()
+        context.alert()
+        
+        sleep(2)
+        context.setState(state: Vibration())
+        context.alert()
+        context.alert()
+        
+        sleep(2)
+        context.setState(state: Silent())
+        context.alert()
+        context.alert()
+    }
 }
 
 // creationa pattern
@@ -201,5 +219,5 @@ enum designCreationPattern: String {
 
 // Comportamiento pattern
 enum designBehaviorPattern: String{
-    case chainOfResponsability, command, iterator, mediator, memento, observer
+    case chainOfResponsability, command, iterator, mediator, memento, observer, state
 }

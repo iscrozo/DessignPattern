@@ -41,6 +41,11 @@
 		7688250528F976570085EF18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7688250328F976570085EF18 /* LaunchScreen.storyboard */; };
 		7688250F28F977490085EF18 /* Payment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688250E28F977490085EF18 /* Payment.swift */; };
 		7688251128F9776D0085EF18 /* GooglePayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7688251028F9776D0085EF18 /* GooglePayment.swift */; };
+		76CFC9E2290016BA008AFF12 /* MobileAlertStateContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFC9E1290016BA008AFF12 /* MobileAlertStateContext.swift */; };
+		76CFC9E4290016DC008AFF12 /* MobileAlertState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFC9E3290016DC008AFF12 /* MobileAlertState.swift */; };
+		76CFC9E62900170A008AFF12 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFC9E52900170A008AFF12 /* Sound.swift */; };
+		76CFC9E829001735008AFF12 /* Vibration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFC9E729001735008AFF12 /* Vibration.swift */; };
+		76CFC9EA2900177D008AFF12 /* Slient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CFC9E92900177D008AFF12 /* Slient.swift */; };
 		76F4B5AC28FE2D6E008C01B2 /* ApprovedLoanHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5AB28FE2D6E008C01B2 /* ApprovedLoanHandler.swift */; };
 		76F4B5AE28FE2DD1008C01B2 /* GoldHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5AD28FE2DD1008C01B2 /* GoldHandler.swift */; };
 		76F4B5B028FE2E80008C01B2 /* PlatiniumHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F4B5AF28FE2E80008C01B2 /* PlatiniumHandler.swift */; };
@@ -98,6 +103,11 @@
 		7688250628F976570085EF18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7688250E28F977490085EF18 /* Payment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payment.swift; sourceTree = "<group>"; };
 		7688251028F9776D0085EF18 /* GooglePayment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePayment.swift; sourceTree = "<group>"; };
+		76CFC9E1290016BA008AFF12 /* MobileAlertStateContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAlertStateContext.swift; sourceTree = "<group>"; };
+		76CFC9E3290016DC008AFF12 /* MobileAlertState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileAlertState.swift; sourceTree = "<group>"; };
+		76CFC9E52900170A008AFF12 /* Sound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		76CFC9E729001735008AFF12 /* Vibration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vibration.swift; sourceTree = "<group>"; };
+		76CFC9E92900177D008AFF12 /* Slient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slient.swift; sourceTree = "<group>"; };
 		76F4B5AB28FE2D6E008C01B2 /* ApprovedLoanHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApprovedLoanHandler.swift; sourceTree = "<group>"; };
 		76F4B5AD28FE2DD1008C01B2 /* GoldHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldHandler.swift; sourceTree = "<group>"; };
 		76F4B5AF28FE2E80008C01B2 /* PlatiniumHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatiniumHandler.swift; sourceTree = "<group>"; };
@@ -250,9 +260,22 @@
 			path = FactoryMethod;
 			sourceTree = "<group>";
 		};
+		76CFC9E02900165C008AFF12 /* state */ = {
+			isa = PBXGroup;
+			children = (
+				76CFC9E1290016BA008AFF12 /* MobileAlertStateContext.swift */,
+				76CFC9E3290016DC008AFF12 /* MobileAlertState.swift */,
+				76CFC9E52900170A008AFF12 /* Sound.swift */,
+				76CFC9E729001735008AFF12 /* Vibration.swift */,
+				76CFC9E92900177D008AFF12 /* Slient.swift */,
+			);
+			path = state;
+			sourceTree = "<group>";
+		};
 		76F4B5A928FE2CF7008C01B2 /* behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				76CFC9E02900165C008AFF12 /* state */,
 				763ACBED28FF864300B1D70D /* observer */,
 				763ACBE628FF809000B1D70D /* memento */,
 				76F4B5C728FE4486008C01B2 /* mediator */,
@@ -382,12 +405,15 @@
 			files = (
 				76F4B5B228FE2ED3008C01B2 /* BlackHandler.swift in Sources */,
 				763ACBF128FF868F00B1D70D /* Observer.swift in Sources */,
+				76CFC9E4290016DC008AFF12 /* MobileAlertState.swift in Sources */,
 				763ACBE828FF80B700B1D70D /* ArticleMemento.swift in Sources */,
 				76F4B5D128FE4863008C01B2 /* ConcreteMediator.swift in Sources */,
 				7628B5FC28FCC6BA00E77721 /* PaymentMethodClient.swift in Sources */,
 				763ACBF928FF9F6A00B1D70D /* Pedestrian.swift in Sources */,
 				768824FD28F976530085EF18 /* ViewController.swift in Sources */,
+				76CFC9E829001735008AFF12 /* Vibration.swift in Sources */,
 				7628B60428FCF03600E77721 /* VisaCard.swift in Sources */,
+				76CFC9EA2900177D008AFF12 /* Slient.swift in Sources */,
 				76F4B5B028FE2E80008C01B2 /* PlatiniumHandler.swift in Sources */,
 				763ACBF328FF86B800B1D70D /* Subject.swift in Sources */,
 				76F4B5BF28FE3A87008C01B2 /* CreditCardInvoker.swift in Sources */,
@@ -408,6 +434,7 @@
 				76F4B5BB28FE39AF008C01B2 /* CreditCardActivateCommand.swift in Sources */,
 				76F4B5C928FE473C008C01B2 /* Mediator.swift in Sources */,
 				763ACBF728FF9CE600B1D70D /* Car.swift in Sources */,
+				76CFC9E2290016BA008AFF12 /* MobileAlertStateContext.swift in Sources */,
 				7628B5F828FCC5D000E77721 /* PaymentIntAdvancedCardFactory.swift in Sources */,
 				76190E2528F9788A0000A050 /* PaymentFactory.swift in Sources */,
 				7628B5F228FCC48100E77721 /* MonthlyMethod.swift in Sources */,
@@ -417,6 +444,7 @@
 				7628B5EC28FCBFFE00E77721 /* CardPaymentAF.swift in Sources */,
 				76F4B5B928FE38E4008C01B2 /* CreditCardReceive.swift in Sources */,
 				7628B5F428FCC4E900E77721 /* PaymentAdvancedMethod.swift in Sources */,
+				76CFC9E62900170A008AFF12 /* Sound.swift in Sources */,
 				7628B5F628FCC56B00E77721 /* AbstractFactory.swift in Sources */,
 				7688250F28F977490085EF18 /* Payment.swift in Sources */,
 				76F4B5AC28FE2D6E008C01B2 /* ApprovedLoanHandler.swift in Sources */,

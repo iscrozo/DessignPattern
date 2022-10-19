@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .state)
+        testBehaviorPatther(typePattern: .interpreter)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -55,6 +55,8 @@ class ViewController: UIViewController {
             testObserver()
         case .state:
             testState()
+        case .interpreter:
+            testInterpreter()
         }
     }
 
@@ -210,6 +212,16 @@ extension ViewController {
         context.alert()
         context.alert()
     }
+    
+    func testInterpreter() {
+        let cero = TerminalExpression(text: "0")
+        let uno = TerminalExpression(text: "1")
+        
+        let containsOneOrCero = OrExpression(expression1: cero, expression2: uno)
+        print(containsOneOrCero.interpret(context: "cero"))
+        
+        print(containsOneOrCero.interpret(context: "0"))
+    }
 }
 
 // creationa pattern
@@ -219,5 +231,6 @@ enum designCreationPattern: String {
 
 // Comportamiento pattern
 enum designBehaviorPattern: String{
-    case chainOfResponsability, command, iterator, mediator, memento, observer, state
+    case chainOfResponsability, command, iterator, mediator, memento, observer, state,
+        interpreter
 }

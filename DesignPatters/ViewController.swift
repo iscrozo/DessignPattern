@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .interpreter)
+        testBehaviorPatther(typePattern: .strategy)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -57,6 +57,8 @@ class ViewController: UIViewController {
             testState()
         case .interpreter:
             testInterpreter()
+        case .strategy:
+            testStrategy()
         }
     }
 
@@ -223,6 +225,14 @@ extension ViewController {
         
         print(containsOneOrCero.interpret(context: "0"))
     }
+    
+    func testStrategy() {
+        let context = Context(strategyTextFormatter: CapitalStrategyTextFormatter())
+        context.publishText(text: "este texto sera convertido en MAYUS mediante algoritmo")
+        
+        let context1 = Context(strategyTextFormatter: LowerStratefyTextFormatter())
+        context1.publishText(text: "ESTE TEXTO SERA CONVERTIDO EN MINUS")
+    }
 }
 
 // creationa pattern
@@ -233,5 +243,5 @@ enum designCreationPattern: String {
 // Comportamiento pattern
 enum designBehaviorPattern: String{
     case chainOfResponsability, command, iterator, mediator, memento, observer, state,
-        interpreter
+        interpreter, strategy
 }

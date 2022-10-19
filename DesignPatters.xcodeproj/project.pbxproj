@@ -27,6 +27,12 @@
 		763ACBE828FF80B700B1D70D /* ArticleMemento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBE728FF80B700B1D70D /* ArticleMemento.swift */; };
 		763ACBEA28FF80F000B1D70D /* ArticleOriginator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBE928FF80F000B1D70D /* ArticleOriginator.swift */; };
 		763ACBEC28FF818D00B1D70D /* Carataker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBEB28FF818D00B1D70D /* Carataker.swift */; };
+		763ACBEF28FF865C00B1D70D /* TrafficLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBEE28FF865C00B1D70D /* TrafficLight.swift */; };
+		763ACBF128FF868F00B1D70D /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBF028FF868F00B1D70D /* Observer.swift */; };
+		763ACBF328FF86B800B1D70D /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBF228FF86B800B1D70D /* Subject.swift */; };
+		763ACBF528FF871000B1D70D /* MessagePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBF428FF871000B1D70D /* MessagePublisher.swift */; };
+		763ACBF728FF9CE600B1D70D /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBF628FF9CE600B1D70D /* Car.swift */; };
+		763ACBF928FF9F6A00B1D70D /* Pedestrian.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763ACBF828FF9F6A00B1D70D /* Pedestrian.swift */; };
 		768824F928F976530085EF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824F828F976530085EF18 /* AppDelegate.swift */; };
 		768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FA28F976530085EF18 /* SceneDelegate.swift */; };
 		768824FD28F976530085EF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FC28F976530085EF18 /* ViewController.swift */; };
@@ -76,6 +82,12 @@
 		763ACBE728FF80B700B1D70D /* ArticleMemento.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleMemento.swift; sourceTree = "<group>"; };
 		763ACBE928FF80F000B1D70D /* ArticleOriginator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleOriginator.swift; sourceTree = "<group>"; };
 		763ACBEB28FF818D00B1D70D /* Carataker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carataker.swift; sourceTree = "<group>"; };
+		763ACBEE28FF865C00B1D70D /* TrafficLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficLight.swift; sourceTree = "<group>"; };
+		763ACBF028FF868F00B1D70D /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		763ACBF228FF86B800B1D70D /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		763ACBF428FF871000B1D70D /* MessagePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePublisher.swift; sourceTree = "<group>"; };
+		763ACBF628FF9CE600B1D70D /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		763ACBF828FF9F6A00B1D70D /* Pedestrian.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pedestrian.swift; sourceTree = "<group>"; };
 		768824F528F976530085EF18 /* DesignPatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768824F828F976530085EF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768824FA28F976530085EF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +181,19 @@
 			path = memento;
 			sourceTree = "<group>";
 		};
+		763ACBED28FF864300B1D70D /* observer */ = {
+			isa = PBXGroup;
+			children = (
+				763ACBEE28FF865C00B1D70D /* TrafficLight.swift */,
+				763ACBF028FF868F00B1D70D /* Observer.swift */,
+				763ACBF228FF86B800B1D70D /* Subject.swift */,
+				763ACBF428FF871000B1D70D /* MessagePublisher.swift */,
+				763ACBF628FF9CE600B1D70D /* Car.swift */,
+				763ACBF828FF9F6A00B1D70D /* Pedestrian.swift */,
+			);
+			path = observer;
+			sourceTree = "<group>";
+		};
 		768824EC28F976530085EF18 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +253,7 @@
 		76F4B5A928FE2CF7008C01B2 /* behavioral */ = {
 			isa = PBXGroup;
 			children = (
+				763ACBED28FF864300B1D70D /* observer */,
 				763ACBE628FF809000B1D70D /* memento */,
 				76F4B5C728FE4486008C01B2 /* mediator */,
 				76F4B5C028FE3D9F008C01B2 /* iterator */,
@@ -355,12 +381,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F4B5B228FE2ED3008C01B2 /* BlackHandler.swift in Sources */,
+				763ACBF128FF868F00B1D70D /* Observer.swift in Sources */,
 				763ACBE828FF80B700B1D70D /* ArticleMemento.swift in Sources */,
 				76F4B5D128FE4863008C01B2 /* ConcreteMediator.swift in Sources */,
 				7628B5FC28FCC6BA00E77721 /* PaymentMethodClient.swift in Sources */,
+				763ACBF928FF9F6A00B1D70D /* Pedestrian.swift in Sources */,
 				768824FD28F976530085EF18 /* ViewController.swift in Sources */,
 				7628B60428FCF03600E77721 /* VisaCard.swift in Sources */,
 				76F4B5B028FE2E80008C01B2 /* PlatiniumHandler.swift in Sources */,
+				763ACBF328FF86B800B1D70D /* Subject.swift in Sources */,
 				76F4B5BF28FE3A87008C01B2 /* CreditCardInvoker.swift in Sources */,
 				7628B5FF28FCD25800E77721 /* Card.swift in Sources */,
 				76F4B5CF28FE4828008C01B2 /* ConcreteColleague2.swift in Sources */,
@@ -378,9 +407,11 @@
 				7688251128F9776D0085EF18 /* GooglePayment.swift in Sources */,
 				76F4B5BB28FE39AF008C01B2 /* CreditCardActivateCommand.swift in Sources */,
 				76F4B5C928FE473C008C01B2 /* Mediator.swift in Sources */,
+				763ACBF728FF9CE600B1D70D /* Car.swift in Sources */,
 				7628B5F828FCC5D000E77721 /* PaymentIntAdvancedCardFactory.swift in Sources */,
 				76190E2528F9788A0000A050 /* PaymentFactory.swift in Sources */,
 				7628B5F228FCC48100E77721 /* MonthlyMethod.swift in Sources */,
+				763ACBF528FF871000B1D70D /* MessagePublisher.swift in Sources */,
 				7628B5F028FCC44400E77721 /* Method.swift in Sources */,
 				76F4B5C628FE3E7C008C01B2 /* CreditCardIterator.swift in Sources */,
 				7628B5EC28FCBFFE00E77721 /* CardPaymentAF.swift in Sources */,
@@ -394,6 +425,7 @@
 				763ACBEA28FF80F000B1D70D /* ArticleOriginator.swift in Sources */,
 				763ACBEC28FF818D00B1D70D /* Carataker.swift in Sources */,
 				768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */,
+				763ACBEF28FF865C00B1D70D /* TrafficLight.swift in Sources */,
 				7628B60728FCF70B00E77721 /* CardSingleton.swift in Sources */,
 				76F4B5B428FE2F36008C01B2 /* BankHandler.swift in Sources */,
 				76F4B5BD28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift in Sources */,

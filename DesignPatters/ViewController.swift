@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .memento)
+        testBehaviorPatther(typePattern: .observer)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -51,6 +51,8 @@ class ViewController: UIViewController {
             testMediator()
         case .memento:
             testMemento()
+        case .observer:
+            testObserver()
         }
     }
 
@@ -174,6 +176,22 @@ extension ViewController {
         article.restore(memento: memento2)
         print(article.text)
     }
+    
+    func testObserver(){
+        let car = Car()
+        let pedestrian = Pedestrian()
+        var trafficLight = TrafficLight(status: "CAR_GREEN")
+        let messagePublisher = MessagePublisher()
+        
+        messagePublisher.attach(o: car)
+        messagePublisher.attach(o: pedestrian)
+        messagePublisher.notifyUpdate(trafficLight: trafficLight)
+        
+        sleep(2)
+        print("2 segundos")
+        trafficLight = TrafficLight(status: "CAR_RED")
+        messagePublisher.notifyUpdate(trafficLight: trafficLight)
+    }
 }
 
 // creationa pattern
@@ -183,5 +201,5 @@ enum designCreationPattern: String {
 
 // Comportamiento pattern
 enum designBehaviorPattern: String{
-    case chainOfResponsability, command, iterator, mediator, memento
+    case chainOfResponsability, command, iterator, mediator, memento, observer
 }

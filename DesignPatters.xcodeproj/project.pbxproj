@@ -50,6 +50,10 @@
 		764CE6872900D647004CC59C /* UnsecureCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6862900D647004CC59C /* UnsecureCreditCard.swift */; };
 		764CE6892900D685004CC59C /* CreditCardB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6882900D685004CC59C /* CreditCardB.swift */; };
 		764CE68B2900D6D5004CC59C /* ClassicCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE68A2900D6D5004CC59C /* ClassicCreditCard.swift */; };
+		764CE68E2900D879004CC59C /* AccountComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE68D2900D879004CC59C /* AccountComponent.swift */; };
+		764CE6902900D8A6004CC59C /* SavingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE68F2900D8A6004CC59C /* SavingAccount.swift */; };
+		764CE6922900D8EC004CC59C /* CurrentAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6912900D8EC004CC59C /* CurrentAccount.swift */; };
+		764CE6942900D917004CC59C /* AccountComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6932900D917004CC59C /* AccountComposite.swift */; };
 		768824F928F976530085EF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824F828F976530085EF18 /* AppDelegate.swift */; };
 		768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FA28F976530085EF18 /* SceneDelegate.swift */; };
 		768824FD28F976530085EF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FC28F976530085EF18 /* ViewController.swift */; };
@@ -135,6 +139,10 @@
 		764CE6862900D647004CC59C /* UnsecureCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsecureCreditCard.swift; sourceTree = "<group>"; };
 		764CE6882900D685004CC59C /* CreditCardB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardB.swift; sourceTree = "<group>"; };
 		764CE68A2900D6D5004CC59C /* ClassicCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicCreditCard.swift; sourceTree = "<group>"; };
+		764CE68D2900D879004CC59C /* AccountComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountComponent.swift; sourceTree = "<group>"; };
+		764CE68F2900D8A6004CC59C /* SavingAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingAccount.swift; sourceTree = "<group>"; };
+		764CE6912900D8EC004CC59C /* CurrentAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentAccount.swift; sourceTree = "<group>"; };
+		764CE6932900D917004CC59C /* AccountComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountComposite.swift; sourceTree = "<group>"; };
 		768824F528F976530085EF18 /* DesignPatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768824F828F976530085EF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768824FA28F976530085EF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -280,6 +288,7 @@
 		764CE6792900D0D2004CC59C /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				764CE68C2900D862004CC59C /* composite */,
 				764CE6812900D5BA004CC59C /* bridge */,
 				764CE67A2900D103004CC59C /* adapter */,
 			);
@@ -306,6 +315,17 @@
 				764CE68A2900D6D5004CC59C /* ClassicCreditCard.swift */,
 			);
 			path = bridge;
+			sourceTree = "<group>";
+		};
+		764CE68C2900D862004CC59C /* composite */ = {
+			isa = PBXGroup;
+			children = (
+				764CE68D2900D879004CC59C /* AccountComponent.swift */,
+				764CE68F2900D8A6004CC59C /* SavingAccount.swift */,
+				764CE6912900D8EC004CC59C /* CurrentAccount.swift */,
+				764CE6932900D917004CC59C /* AccountComposite.swift */,
+			);
+			path = composite;
 			sourceTree = "<group>";
 		};
 		768824EC28F976530085EF18 = {
@@ -535,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76F4B5B228FE2ED3008C01B2 /* BlackHandler.swift in Sources */,
+				764CE68E2900D879004CC59C /* AccountComponent.swift in Sources */,
 				764CE66B2900BB69004CC59C /* Visa.swift in Sources */,
 				763ACBF128FF868F00B1D70D /* Observer.swift in Sources */,
 				76CFC9E4290016DC008AFF12 /* MobileAlertState.swift in Sources */,
@@ -569,6 +590,7 @@
 				7628B5EE28FCC3DF00E77721 /* GooglePaymentAF.swift in Sources */,
 				76F4B5CD28FE47B8008C01B2 /* ConcreteColleague1.swift in Sources */,
 				76190E2128F977EA0000A050 /* CardPayment.swift in Sources */,
+				764CE6942900D917004CC59C /* AccountComposite.swift in Sources */,
 				7688251128F9776D0085EF18 /* GooglePayment.swift in Sources */,
 				76F4B5BB28FE39AF008C01B2 /* CreditCardActivateCommand.swift in Sources */,
 				76F4B5C928FE473C008C01B2 /* Mediator.swift in Sources */,
@@ -580,6 +602,7 @@
 				7628B5F228FCC48100E77721 /* MonthlyMethod.swift in Sources */,
 				764CE66E2900BD56004CC59C /* CreditCardVisitor.swift in Sources */,
 				764CE6782900C914004CC59C /* BlackCreditCardVisitor.swift in Sources */,
+				764CE6902900D8A6004CC59C /* SavingAccount.swift in Sources */,
 				76CFC9FD29001DED008AFF12 /* Context.swift in Sources */,
 				763ACBF528FF871000B1D70D /* MessagePublisher.swift in Sources */,
 				7628B5F028FCC44400E77721 /* Method.swift in Sources */,
@@ -601,6 +624,7 @@
 				764CE6892900D685004CC59C /* CreditCardB.swift in Sources */,
 				76F4B5AC28FE2D6E008C01B2 /* ApprovedLoanHandler.swift in Sources */,
 				76F4B5C228FE3DB1008C01B2 /* CreditCard.swift in Sources */,
+				764CE6922900D8EC004CC59C /* CurrentAccount.swift in Sources */,
 				7628B5FA28FCC65500E77721 /* MonthlyGoogleFactory.swift in Sources */,
 				763ACBEA28FF80F000B1D70D /* ArticleOriginator.swift in Sources */,
 				763ACBEC28FF818D00B1D70D /* Carataker.swift in Sources */,

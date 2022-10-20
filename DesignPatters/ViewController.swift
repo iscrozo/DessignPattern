@@ -16,7 +16,10 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .visitor)
+//        testBehaviorPatther(typePattern: .visitor)
+        
+//        test of structural pattern
+        testStructuralPatther(typePattern: .adapter)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -63,6 +66,13 @@ class ViewController: UIViewController {
             testTemplate()
         case .visitor:
             testVisitor()
+        }
+    }
+    
+    func testStructuralPatther( typePattern: designStructuralPattern) {
+        switch typePattern {
+        case .adapter:
+            testAdapter()
         }
     }
 
@@ -252,6 +262,24 @@ extension ViewController {
     }
 }
 
+// MARK: structural pattern
+extension ViewController {
+    func testAdapter() {
+        let adaptee = OperationAdaptee(a: 3, b: 4)
+//        if (adaptee.sum() == 7) {
+//            print("OK la suma es correcta")
+//        }
+        
+        let target = OperationAdapter(adaptee: adaptee)
+        if (target.getSum == "7") {
+            print("OK la suma es correcta")
+        } else {
+            print("error en la suma es incorrecta")
+        }
+        
+    }
+}
+
 // creationa pattern
 enum designCreationPattern: String {
     case factoryMethods, abstractFactory, builder, prototype, singleton
@@ -261,4 +289,9 @@ enum designCreationPattern: String {
 enum designBehaviorPattern: String{
     case chainOfResponsability, command, iterator, mediator, memento, observer, state,
         interpreter, strategy, template, visitor
+}
+
+// structural pattern
+enum designStructuralPattern: String {
+    case adapter
 }

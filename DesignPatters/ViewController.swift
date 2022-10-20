@@ -16,7 +16,7 @@ class ViewController: UIViewController {
 //        testCreationPattern(typePattern: .singleton)
         
 //        test of behavior pattern
-        testBehaviorPatther(typePattern: .template)
+        testBehaviorPatther(typePattern: .visitor)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -61,6 +61,8 @@ class ViewController: UIViewController {
             testStrategy()
         case .template:
             testTemplate()
+        case .visitor:
+            testVisitor()
         }
     }
 
@@ -243,6 +245,11 @@ extension ViewController {
         let paymentMethodPaypal = Paypal()
         paymentMethodPaypal.makePayment()
     }
+    
+    func testVisitor(){
+        let oferta = GassolineOffer()
+        oferta.accept(visitor: BlackCreditCardVisitor())
+    }
 }
 
 // creationa pattern
@@ -253,5 +260,5 @@ enum designCreationPattern: String {
 // Comportamiento pattern
 enum designBehaviorPattern: String{
     case chainOfResponsability, command, iterator, mediator, memento, observer, state,
-        interpreter, strategy, template
+        interpreter, strategy, template, visitor
 }

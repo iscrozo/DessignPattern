@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 //        testBehaviorPatther(typePattern: .visitor)
         
 //        test of structural pattern
-        testStructuralPatther(typePattern: .adapter)
+        testStructuralPatther(typePattern: .bridge)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -73,6 +73,8 @@ class ViewController: UIViewController {
         switch typePattern {
         case .adapter:
             testAdapter()
+        case .bridge:
+            testBridge()
         }
     }
 
@@ -278,6 +280,14 @@ extension ViewController {
         }
         
     }
+    
+    func testBridge() {
+        var classic = ClassicCreditCard(creditCard: UnsecureCreditCard())
+        classic.makeyPayment()
+        
+        classic = ClassicCreditCard(creditCard: SecureCreditCard())
+        classic.makeyPayment()
+    }
 }
 
 // creationa pattern
@@ -293,5 +303,5 @@ enum designBehaviorPattern: String{
 
 // structural pattern
 enum designStructuralPattern: String {
-    case adapter
+    case adapter, bridge
 }

@@ -45,6 +45,11 @@
 		764CE67C2900D2CE004CC59C /* OperationTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE67B2900D2CE004CC59C /* OperationTarget.swift */; };
 		764CE67E2900D2F0004CC59C /* OperationAdaptee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE67D2900D2F0004CC59C /* OperationAdaptee.swift */; };
 		764CE6802900D36B004CC59C /* OperationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE67F2900D36B004CC59C /* OperationAdapter.swift */; };
+		764CE6832900D5EC004CC59C /* CreditCardProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6822900D5EC004CC59C /* CreditCardProtocol.swift */; };
+		764CE6852900D610004CC59C /* SecureCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6842900D610004CC59C /* SecureCreditCard.swift */; };
+		764CE6872900D647004CC59C /* UnsecureCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6862900D647004CC59C /* UnsecureCreditCard.swift */; };
+		764CE6892900D685004CC59C /* CreditCardB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE6882900D685004CC59C /* CreditCardB.swift */; };
+		764CE68B2900D6D5004CC59C /* ClassicCreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 764CE68A2900D6D5004CC59C /* ClassicCreditCard.swift */; };
 		768824F928F976530085EF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824F828F976530085EF18 /* AppDelegate.swift */; };
 		768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FA28F976530085EF18 /* SceneDelegate.swift */; };
 		768824FD28F976530085EF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FC28F976530085EF18 /* ViewController.swift */; };
@@ -125,6 +130,11 @@
 		764CE67B2900D2CE004CC59C /* OperationTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationTarget.swift; sourceTree = "<group>"; };
 		764CE67D2900D2F0004CC59C /* OperationAdaptee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationAdaptee.swift; sourceTree = "<group>"; };
 		764CE67F2900D36B004CC59C /* OperationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationAdapter.swift; sourceTree = "<group>"; };
+		764CE6822900D5EC004CC59C /* CreditCardProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardProtocol.swift; sourceTree = "<group>"; };
+		764CE6842900D610004CC59C /* SecureCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureCreditCard.swift; sourceTree = "<group>"; };
+		764CE6862900D647004CC59C /* UnsecureCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsecureCreditCard.swift; sourceTree = "<group>"; };
+		764CE6882900D685004CC59C /* CreditCardB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardB.swift; sourceTree = "<group>"; };
+		764CE68A2900D6D5004CC59C /* ClassicCreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassicCreditCard.swift; sourceTree = "<group>"; };
 		768824F528F976530085EF18 /* DesignPatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768824F828F976530085EF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768824FA28F976530085EF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -270,6 +280,7 @@
 		764CE6792900D0D2004CC59C /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				764CE6812900D5BA004CC59C /* bridge */,
 				764CE67A2900D103004CC59C /* adapter */,
 			);
 			path = structural;
@@ -283,6 +294,18 @@
 				764CE67F2900D36B004CC59C /* OperationAdapter.swift */,
 			);
 			path = adapter;
+			sourceTree = "<group>";
+		};
+		764CE6812900D5BA004CC59C /* bridge */ = {
+			isa = PBXGroup;
+			children = (
+				764CE6822900D5EC004CC59C /* CreditCardProtocol.swift */,
+				764CE6842900D610004CC59C /* SecureCreditCard.swift */,
+				764CE6862900D647004CC59C /* UnsecureCreditCard.swift */,
+				764CE6882900D685004CC59C /* CreditCardB.swift */,
+				764CE68A2900D6D5004CC59C /* ClassicCreditCard.swift */,
+			);
+			path = bridge;
 			sourceTree = "<group>";
 		};
 		768824EC28F976530085EF18 = {
@@ -521,6 +544,7 @@
 				763ACBF928FF9F6A00B1D70D /* Pedestrian.swift in Sources */,
 				768824FD28F976530085EF18 /* ViewController.swift in Sources */,
 				76CFC9E829001735008AFF12 /* Vibration.swift in Sources */,
+				764CE6872900D647004CC59C /* UnsecureCreditCard.swift in Sources */,
 				76CFC9F629001D1A008AFF12 /* StrategyTextFormatter.swift in Sources */,
 				7628B60428FCF03600E77721 /* VisaCard.swift in Sources */,
 				764CE6742900BE10004CC59C /* FligthOffer.swift in Sources */,
@@ -528,6 +552,7 @@
 				76F4B5B028FE2E80008C01B2 /* PlatiniumHandler.swift in Sources */,
 				763ACBF328FF86B800B1D70D /* Subject.swift in Sources */,
 				764CE6692900BABE004CC59C /* Paypal.swift in Sources */,
+				764CE68B2900D6D5004CC59C /* ClassicCreditCard.swift in Sources */,
 				76F4B5BF28FE3A87008C01B2 /* CreditCardInvoker.swift in Sources */,
 				7628B5FF28FCD25800E77721 /* Card.swift in Sources */,
 				76F4B5CF28FE4828008C01B2 /* ConcreteColleague2.swift in Sources */,
@@ -559,6 +584,7 @@
 				763ACBF528FF871000B1D70D /* MessagePublisher.swift in Sources */,
 				7628B5F028FCC44400E77721 /* Method.swift in Sources */,
 				764CE6802900D36B004CC59C /* OperationAdapter.swift in Sources */,
+				764CE6832900D5EC004CC59C /* CreditCardProtocol.swift in Sources */,
 				764CE6672900B9F8004CC59C /* PaymentTemplate.swift in Sources */,
 				76CFC9F129001A50008AFF12 /* OrExpression.swift in Sources */,
 				76F4B5C628FE3E7C008C01B2 /* CreditCardIterator.swift in Sources */,
@@ -572,6 +598,7 @@
 				764CE6722900BD9C004CC59C /* GassolineOffer.swift in Sources */,
 				7628B5F628FCC56B00E77721 /* AbstractFactory.swift in Sources */,
 				7688250F28F977490085EF18 /* Payment.swift in Sources */,
+				764CE6892900D685004CC59C /* CreditCardB.swift in Sources */,
 				76F4B5AC28FE2D6E008C01B2 /* ApprovedLoanHandler.swift in Sources */,
 				76F4B5C228FE3DB1008C01B2 /* CreditCard.swift in Sources */,
 				7628B5FA28FCC65500E77721 /* MonthlyGoogleFactory.swift in Sources */,
@@ -583,6 +610,7 @@
 				763ACBEF28FF865C00B1D70D /* TrafficLight.swift in Sources */,
 				764CE6762900BE43004CC59C /* ClassicCreditCardVisitor.swift in Sources */,
 				7628B60728FCF70B00E77721 /* CardSingleton.swift in Sources */,
+				764CE6852900D610004CC59C /* SecureCreditCard.swift in Sources */,
 				76F4B5B428FE2F36008C01B2 /* BankHandler.swift in Sources */,
 				76F4B5BD28FE3A2B008C01B2 /* CreditCardDesactivateCommand.swift in Sources */,
 			);

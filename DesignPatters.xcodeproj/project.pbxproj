@@ -58,6 +58,9 @@
 		765EB0762902C058003B7366 /* Detective.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765EB0752902C058003B7366 /* Detective.swift */; };
 		765EB0782902C0BF003B7366 /* Private.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765EB0772902C0BF003B7366 /* Private.swift */; };
 		765EB07A2902C0EC003B7366 /* EnemyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765EB0792902C0EC003B7366 /* EnemyFactory.swift */; };
+		765EB07D2902C582003B7366 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765EB07C2902C582003B7366 /* Internet.swift */; };
+		765EB07F2902C5AA003B7366 /* AccessToInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765EB07E2902C5AA003B7366 /* AccessToInternet.swift */; };
+		765EB0812902C5EE003B7366 /* ProxyInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 765EB0802902C5EE003B7366 /* ProxyInternet.swift */; };
 		766ED446290249FE0069C15E /* CreditComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED445290249FE0069C15E /* CreditComponent.swift */; };
 		766ED44829024A210069C15E /* BlackCreditComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED44729024A210069C15E /* BlackCreditComponent.swift */; };
 		766ED44A29024A590069C15E /* GoldCreditComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED44929024A590069C15E /* GoldCreditComponent.swift */; };
@@ -162,6 +165,9 @@
 		765EB0752902C058003B7366 /* Detective.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detective.swift; sourceTree = "<group>"; };
 		765EB0772902C0BF003B7366 /* Private.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Private.swift; sourceTree = "<group>"; };
 		765EB0792902C0EC003B7366 /* EnemyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnemyFactory.swift; sourceTree = "<group>"; };
+		765EB07C2902C582003B7366 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
+		765EB07E2902C5AA003B7366 /* AccessToInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToInternet.swift; sourceTree = "<group>"; };
+		765EB0802902C5EE003B7366 /* ProxyInternet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyInternet.swift; sourceTree = "<group>"; };
 		766ED445290249FE0069C15E /* CreditComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditComponent.swift; sourceTree = "<group>"; };
 		766ED44729024A210069C15E /* BlackCreditComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackCreditComponent.swift; sourceTree = "<group>"; };
 		766ED44929024A590069C15E /* GoldCreditComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldCreditComponent.swift; sourceTree = "<group>"; };
@@ -318,6 +324,7 @@
 		764CE6792900D0D2004CC59C /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				765EB07B2902C48D003B7366 /* proxy */,
 				765EB0722902BFFF003B7366 /* flyweight */,
 				766ED45129024CED0069C15E /* facade */,
 				766ED444290249CF0069C15E /* decorator */,
@@ -370,6 +377,16 @@
 				765EB0792902C0EC003B7366 /* EnemyFactory.swift */,
 			);
 			path = flyweight;
+			sourceTree = "<group>";
+		};
+		765EB07B2902C48D003B7366 /* proxy */ = {
+			isa = PBXGroup;
+			children = (
+				765EB07C2902C582003B7366 /* Internet.swift */,
+				765EB07E2902C5AA003B7366 /* AccessToInternet.swift */,
+				765EB0802902C5EE003B7366 /* ProxyInternet.swift */,
+			);
+			path = proxy;
 			sourceTree = "<group>";
 		};
 		766ED444290249CF0069C15E /* decorator */ = {
@@ -650,12 +667,14 @@
 				76F4B5BF28FE3A87008C01B2 /* CreditCardInvoker.swift in Sources */,
 				7628B5FF28FCD25800E77721 /* Card.swift in Sources */,
 				76F4B5CF28FE4828008C01B2 /* ConcreteColleague2.swift in Sources */,
+				765EB07F2902C5AA003B7366 /* AccessToInternet.swift in Sources */,
 				764CE6702900BD73004CC59C /* OfferElement.swift in Sources */,
 				7628B5EA28FCBFBA00E77721 /* PaymentAF.swift in Sources */,
 				76F4B5C428FE3DEE008C01B2 /* CreditCardCollection.swift in Sources */,
 				766ED446290249FE0069C15E /* CreditComponent.swift in Sources */,
 				76F4B5CB28FE475E008C01B2 /* Colleague.swift in Sources */,
 				764CE67C2900D2CE004CC59C /* OperationTarget.swift in Sources */,
+				765EB0812902C5EE003B7366 /* ProxyInternet.swift in Sources */,
 				768824F928F976530085EF18 /* AppDelegate.swift in Sources */,
 				766ED45929024D990069C15E /* SilverModule.swift in Sources */,
 				76190E2328F978480000A050 /* TypePayment.swift in Sources */,
@@ -716,6 +735,7 @@
 				765EB0782902C0BF003B7366 /* Private.swift in Sources */,
 				766ED45529024D220069C15E /* BlackModule.swift in Sources */,
 				764CE6762900BE43004CC59C /* ClassicCreditCardVisitor.swift in Sources */,
+				765EB07D2902C582003B7366 /* Internet.swift in Sources */,
 				7628B60728FCF70B00E77721 /* CardSingleton.swift in Sources */,
 				764CE6852900D610004CC59C /* SecureCreditCard.swift in Sources */,
 				76F4B5B428FE2F36008C01B2 /* BankHandler.swift in Sources */,

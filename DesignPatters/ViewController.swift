@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 //        testBehaviorPatther(typePattern: .visitor)
         
 //        test of structural pattern
-        testStructuralPatther(typePattern: .flyweight)
+        testStructuralPatther(typePattern: .proxy)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -83,6 +83,8 @@ class ViewController: UIViewController {
             testFacade()
         case .flyweight:
             testFlyweight()
+        case .proxy:
+            testProxy()
         }
     }
 
@@ -345,6 +347,12 @@ extension ViewController {
         let number = Int.random(in: 0 ..< weapon.count)
         return weapon[number]
     }
+    
+    func testProxy(){
+        let internet = ProxyInternet()
+        internet.connectTo(url: "udemy.com")
+        internet.connectTo(url: "facebook.com")
+    }
 }
 
 // creationa pattern
@@ -360,5 +368,5 @@ enum designBehaviorPattern: String{
 
 // structural pattern
 enum designStructuralPattern: String {
-    case adapter, bridge, composite, decorator, facade, flyweight
+    case adapter, bridge, composite, decorator, facade, flyweight, proxy
 }

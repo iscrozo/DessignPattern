@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 //        testBehaviorPatther(typePattern: .visitor)
         
 //        test of structural pattern
-        testStructuralPatther(typePattern: .facade)
+        testStructuralPatther(typePattern: .flyweight)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -81,6 +81,8 @@ class ViewController: UIViewController {
             testDecorator()
         case .facade:
             testFacade()
+        case .flyweight:
+            testFlyweight()
         }
     }
 
@@ -322,6 +324,27 @@ extension ViewController {
         facade.showCreditGold()
         facade.showCreditSilver()
     }
+    
+    func testFlyweight() {
+       let enemyFactory = EnemyFactory()
+        for _ in 0...10 {
+            let enemy = enemyFactory.getEnemy(type: getRandomEnemyType())
+            enemy.setWeapon(weapon: getRandomWeaponType())
+            enemy.lifePoints()
+        }
+    }
+    
+    func getRandomEnemyType() -> String {
+        let enemyType = ["Private", "Detective"]
+        let number = Int.random(in: 0 ..< enemyType.count)
+        return enemyType[number]
+    }
+    
+    func getRandomWeaponType() -> String {
+        let weapon = ["Fusil", "Revolver", "Pistola", "9mm"]
+        let number = Int.random(in: 0 ..< weapon.count)
+        return weapon[number]
+    }
 }
 
 // creationa pattern
@@ -337,5 +360,5 @@ enum designBehaviorPattern: String{
 
 // structural pattern
 enum designStructuralPattern: String {
-    case adapter, bridge, composite, decorator, facade
+    case adapter, bridge, composite, decorator, facade, flyweight
 }

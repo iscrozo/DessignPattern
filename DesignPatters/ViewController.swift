@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 //        testBehaviorPatther(typePattern: .visitor)
         
 //        test of structural pattern
-        testStructuralPatther(typePattern: .decorator)
+        testStructuralPatther(typePattern: .facade)
     }
     
     func testCreationPattern ( typePattern: designCreationPattern){
@@ -79,6 +79,8 @@ class ViewController: UIViewController {
             testComposite()
         case .decorator:
             testDecorator()
+        case .facade:
+            testFacade()
         }
     }
 
@@ -313,6 +315,13 @@ extension ViewController {
         print("--- Tarjeta Gold configurada----")
         goldSecurePayment.showCredit()
     }
+    
+    func testFacade() {
+        let facade = CreditMarketFacade()
+        facade.showCreditBlack()
+        facade.showCreditGold()
+        facade.showCreditSilver()
+    }
 }
 
 // creationa pattern
@@ -328,5 +337,5 @@ enum designBehaviorPattern: String{
 
 // structural pattern
 enum designStructuralPattern: String {
-    case adapter, bridge, composite, decorator
+    case adapter, bridge, composite, decorator, facade
 }

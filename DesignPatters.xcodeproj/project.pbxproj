@@ -60,6 +60,11 @@
 		766ED44C29024A8C0069C15E /* CreditDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED44B29024A8C0069C15E /* CreditDecorator.swift */; };
 		766ED44E29024AEB0069C15E /* InternationalPaymentDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED44D29024AEB0069C15E /* InternationalPaymentDecorator.swift */; };
 		766ED45029024B6C0069C15E /* SecureDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED44F29024B6C0069C15E /* SecureDecorator.swift */; };
+		766ED45329024D0B0069C15E /* CreditModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED45229024D0B0069C15E /* CreditModule.swift */; };
+		766ED45529024D220069C15E /* BlackModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED45429024D220069C15E /* BlackModule.swift */; };
+		766ED45729024D720069C15E /* GoldModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED45629024D720069C15E /* GoldModule.swift */; };
+		766ED45929024D990069C15E /* SilverModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED45829024D990069C15E /* SilverModule.swift */; };
+		766ED45B29024DC60069C15E /* CreditMarketFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766ED45A29024DC60069C15E /* CreditMarketFacade.swift */; };
 		768824F928F976530085EF18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824F828F976530085EF18 /* AppDelegate.swift */; };
 		768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FA28F976530085EF18 /* SceneDelegate.swift */; };
 		768824FD28F976530085EF18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768824FC28F976530085EF18 /* ViewController.swift */; };
@@ -155,6 +160,11 @@
 		766ED44B29024A8C0069C15E /* CreditDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditDecorator.swift; sourceTree = "<group>"; };
 		766ED44D29024AEB0069C15E /* InternationalPaymentDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternationalPaymentDecorator.swift; sourceTree = "<group>"; };
 		766ED44F29024B6C0069C15E /* SecureDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDecorator.swift; sourceTree = "<group>"; };
+		766ED45229024D0B0069C15E /* CreditModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditModule.swift; sourceTree = "<group>"; };
+		766ED45429024D220069C15E /* BlackModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackModule.swift; sourceTree = "<group>"; };
+		766ED45629024D720069C15E /* GoldModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldModule.swift; sourceTree = "<group>"; };
+		766ED45829024D990069C15E /* SilverModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilverModule.swift; sourceTree = "<group>"; };
+		766ED45A29024DC60069C15E /* CreditMarketFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditMarketFacade.swift; sourceTree = "<group>"; };
 		768824F528F976530085EF18 /* DesignPatters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		768824F828F976530085EF18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		768824FA28F976530085EF18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -300,6 +310,7 @@
 		764CE6792900D0D2004CC59C /* structural */ = {
 			isa = PBXGroup;
 			children = (
+				766ED45129024CED0069C15E /* facade */,
 				766ED444290249CF0069C15E /* decorator */,
 				764CE68C2900D862004CC59C /* composite */,
 				764CE6812900D5BA004CC59C /* bridge */,
@@ -352,6 +363,18 @@
 				766ED44F29024B6C0069C15E /* SecureDecorator.swift */,
 			);
 			path = decorator;
+			sourceTree = "<group>";
+		};
+		766ED45129024CED0069C15E /* facade */ = {
+			isa = PBXGroup;
+			children = (
+				766ED45229024D0B0069C15E /* CreditModule.swift */,
+				766ED45429024D220069C15E /* BlackModule.swift */,
+				766ED45629024D720069C15E /* GoldModule.swift */,
+				766ED45829024D990069C15E /* SilverModule.swift */,
+				766ED45A29024DC60069C15E /* CreditMarketFacade.swift */,
+			);
+			path = facade;
 			sourceTree = "<group>";
 		};
 		768824EC28F976530085EF18 = {
@@ -613,6 +636,7 @@
 				76F4B5CB28FE475E008C01B2 /* Colleague.swift in Sources */,
 				764CE67C2900D2CE004CC59C /* OperationTarget.swift in Sources */,
 				768824F928F976530085EF18 /* AppDelegate.swift in Sources */,
+				766ED45929024D990069C15E /* SilverModule.swift in Sources */,
 				76190E2328F978480000A050 /* TypePayment.swift in Sources */,
 				7628B60228FCEF7200E77721 /* PrototypeCard.swift in Sources */,
 				76F4B5AE28FE2DD1008C01B2 /* GoldHandler.swift in Sources */,
@@ -646,6 +670,7 @@
 				76CFC9F329001A87008AFF12 /* TerminalExpression.swift in Sources */,
 				76CFC9F829001D75008AFF12 /* CapitalStrategyTextFormatter.swift in Sources */,
 				76F4B5B928FE38E4008C01B2 /* CreditCardReceive.swift in Sources */,
+				766ED45329024D0B0069C15E /* CreditModule.swift in Sources */,
 				76CFC9FA29001DBE008AFF12 /* LowerStratefyTextFormatter.swift in Sources */,
 				7628B5F428FCC4E900E77721 /* PaymentAdvancedMethod.swift in Sources */,
 				76CFC9E62900170A008AFF12 /* Sound.swift in Sources */,
@@ -658,11 +683,14 @@
 				764CE6922900D8EC004CC59C /* CurrentAccount.swift in Sources */,
 				7628B5FA28FCC65500E77721 /* MonthlyGoogleFactory.swift in Sources */,
 				763ACBEA28FF80F000B1D70D /* ArticleOriginator.swift in Sources */,
+				766ED45B29024DC60069C15E /* CreditMarketFacade.swift in Sources */,
+				766ED45729024D720069C15E /* GoldModule.swift in Sources */,
 				763ACBEC28FF818D00B1D70D /* Carataker.swift in Sources */,
 				76CFC9ED29001999008AFF12 /* Expression.swift in Sources */,
 				768824FB28F976530085EF18 /* SceneDelegate.swift in Sources */,
 				764CE67E2900D2F0004CC59C /* OperationAdaptee.swift in Sources */,
 				763ACBEF28FF865C00B1D70D /* TrafficLight.swift in Sources */,
+				766ED45529024D220069C15E /* BlackModule.swift in Sources */,
 				764CE6762900BE43004CC59C /* ClassicCreditCardVisitor.swift in Sources */,
 				7628B60728FCF70B00E77721 /* CardSingleton.swift in Sources */,
 				764CE6852900D610004CC59C /* SecureCreditCard.swift in Sources */,
